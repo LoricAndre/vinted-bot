@@ -106,7 +106,7 @@ class Client(discord.Client):
     @tasks.loop(seconds=30)
     async def query_loop(self):
         print("Running queries...")
-        for item in await self.get_items():
+        for item in await self.get_items()[::-1]:
             channel = (
                 self.get_channel(item.channel) 
                 or 
