@@ -1,0 +1,3 @@
+[submodule "vinted-api-wrapper"]
+	path = vinted-api-wrapper
+	url = git@github.com:LoricAndre/vinted-api-wrapper.git
